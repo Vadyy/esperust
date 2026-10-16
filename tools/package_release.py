@@ -62,6 +62,7 @@ def package(binary, platform, output, runtime_dlls=(), runtime_licenses=(), impo
         executable = 'esperust.exe' if platform.startswith('windows') else 'esperust'
         shutil.copy2(binary, staging / executable)
         shutil.copy2(ROOT / 'README.md', staging / 'README.md')
+        shutil.copy2(ROOT / 'LICENSE', staging / 'LICENSE')
         shutil.copytree(importer_runtime, staging / 'runtime', symlinks=True,
                         ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
         shutil.copytree(ROOT / 'branding', staging / 'branding')

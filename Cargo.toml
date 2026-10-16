@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.93"
 description = "Independent EU1162 Circle 2 recreation experiment"
+license = "MIT"
 publish = false
 include = [
     "/Cargo.toml",
@@ -12,6 +13,7 @@ include = [
     "/branding/*",
     "/rust-toolchain.toml",
     "/README.md",
+    "/LICENSE",
     "/build-linux.sh",
     "/build-windows.bat",
     "/build-windows.ps1",
