@@ -1,0 +1,93 @@
+{
+  "format_version": 1,
+  "volume": 0.8,
+  "volume_status": "original 80/100 default; native mixer response curve not yet matched",
+  "maps": [
+    {
+      "id": "circle-2",
+      "source_map_id": 93,
+      "tracks": [
+        "original/resources/bgm/nanorisk.ogg"
+      ],
+      "selection": "native non-chaser role; local solo defaults to runner",
+      "chaser_track": "original/resources/bgm/chaseyourself.ogg"
+    },
+    {
+      "id": "station-2",
+      "source_map_id": 66,
+      "tracks": [
+        "original/resources/bgm/battle4.ogg"
+      ],
+      "selection": "original default_option.x7 maplist"
+    },
+    {
+      "id": "neden-1",
+      "source_map_id": 2,
+      "tracks": [
+        "original/resources/bgm/battle.ogg"
+      ],
+      "selection": "original default_option.x7 maplist"
+    }
+  ],
+  "sources": [
+    {
+      "path": "research/original-music/language/default_option.x7",
+      "sha256": "90c8c866be4499021ecfc8e18743e859f49259f610f20363a11db7f200aa8bb4"
+    },
+    {
+      "path": "research/original-music/xml/map.x7",
+      "sha256": "d3e11a6bc8700bda91b247829a377ae2b548ff83ba723aadfbabbd6ade5fe131"
+    },
+    {
+      "path": "assets/original/resources/mapinfo/bginfo-19dayssl.ini",
+      "sha256": "1e2c4c49c5d43b19900434332046ab0807f2f291532528de8ccb1ac43cd427a2"
+    }
+  ],
+  "resources": [
+    {
+      "source": "resources/bgm/battle.ogg",
+      "asset_path": "original/resources/bgm/battle.ogg",
+      "sha256": "3973bcc9b407fd289ec6b600bdfc90d1733a812340f3757104ee0901b6d13205",
+      "bytes": 1213668,
+      "codec": "vorbis",
+      "sample_rate": 44100,
+      "channels": 2,
+      "duration_seconds": 192.452109
+    },
+    {
+      "source": "resources/bgm/battle4.ogg",
+      "asset_path": "original/resources/bgm/battle4.ogg",
+      "sha256": "c77df3eaa0034cac3abc0979b05808d43307170b3e79937623248a84493b45da",
+      "bytes": 3093514,
+      "codec": "vorbis",
+      "sample_rate": 44100,
+      "channels": 2,
+      "duration_seconds": 192.28
+    },
+    {
+      "source": "resources/bgm/chaseyourself.ogg",
+      "asset_path": "original/resources/bgm/chaseyourself.ogg",
+      "sha256": "797d79043ed46b441f23ba8649a5a7c2bc3c6ccff0104913e67da54264571f55",
+      "bytes": 3308167,
+      "codec": "vorbis",
+      "sample_rate": 44100,
+      "channels": 2,
+      "duration_seconds": 137.935238
+    },
+    {
+      "source": "resources/bgm/nanorisk.ogg",
+      "asset_path": "original/resources/bgm/nanorisk.ogg",
+      "sha256": "409d77e415801edf28ff643816ffebb4c55bb8792480876b66d6c961ede7530d",
+      "bytes": 2190223,
+      "codec": "vorbis",
+      "sample_rate": 44100,
+      "channels": 2,
+      "duration_seconds": 135.78449
+    }
+  ],
+  "limits": [
+    "Circle 2 role changes require a match/chaser system",
+    "Native loading, waiting and round-transition music is outside this gameplay slice",
+    "No original-client audible comparison has been performed"
+  ]
+}
