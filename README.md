@@ -6,6 +6,8 @@ This is a toy project. Not to be taken seriously.
 
 <img width="1953" height="1109" alt="image" src="https://github.com/user-attachments/assets/1e7038b4-116b-4527-9c58-45fb452d8713" />
 
+[Download](https://github.com/Vadyy/esperust/releases) for Windows & Linux
+
 ## Credit
 Vivy for the supplied 1162 unpacked client.\
 Everyone that contributed to the S4 RE scene, including reversed server files, scn tooling, etc. As this wouldn't have been possible without them.\
