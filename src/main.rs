@@ -308,6 +308,10 @@ fn main() {
         .insert_resource(ClearColor(Color::srgb(0.16, 0.20, 0.26)))
         .add_plugins(
             DefaultPlugins
+                .set(bevy::audio::AudioPlugin {
+                    global_volume: bevy::audio::GlobalVolume::new(bevy::audio::Volume::Linear(0.25)),
+                    ..default()
+                })
                 .set(bevy::log::LogPlugin { fmt_layer: logging::fmt_layer, ..default() })
                 .set(WindowPlugin {
                     primary_window: Some(Window {
