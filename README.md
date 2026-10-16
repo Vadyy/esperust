@@ -3,8 +3,8 @@
 An experimental S4 League recreation written in Rust with Bevy. Entirely by AI.
 
 ## Credit
-Vivy for the supplied 1162 unpacked client.
-Everyone that contributed to the S4 RE scene, including reversed server files, scn tooling, etc. As this wouldn't have been possible without them.
+Vivy for the supplied 1162 unpacked client.\
+Everyone that contributed to the S4 RE scene, including reversed server files, scn tooling, etc. As this wouldn't have been possible without them.\
 While this project was constricted in building everything in-house. I cannot guarantee it did. Plus I'm sure the models were pre-trained on public repos anyway.
 
 ## Download
@@ -12,6 +12,15 @@ While this project was constricted in building everything in-house. I cannot gua
 Extract a compiled build from this repository's **Releases** page and run
 `esperust` (`esperust.exe` on Windows). Python and importer libraries are included;
 keep the extracted folders beside the executable.
+
+### Assets
+
+On first launch, select your client folder containing `_resources/` (tested with patch 1162 only). Include its
+matching `resource.s4hd`. You can also
+pass `--resources /path/to/client` when launching the game.
+
+Converted assets are saved in `assets/` and reused on later launches.
+
 
 ## Build
 
@@ -124,14 +133,3 @@ cargo +1.93.1 build --release --locked
 ```
 
 Bevy uses Metal on macOS. macOS builds and gameplay have not been tested.
-
-### Assets
-
-On first launch, select your client folder containing `_resources/`. Include its
-matching `resource.s4hd` to select the correct revisions when needed. You can also
-pass `--resources /path/to/client` when launching the game.
-
-Source builds require Python 3.11+, Pillow, OpenSSL with SEED support, and
-libLZO2. The build scripts install these; releases include them.
-
-Converted assets are saved in `assets/` and reused on later launches.
